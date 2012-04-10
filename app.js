@@ -70,6 +70,14 @@ app.get('/thread/:title.:format?', api.show);
 app.get('/thread', api.list);
 app.get('/threads', api.myList);
 
+app.get('/api', function (req, res) {
+  res.send({
+    api: {
+      version: '0.1.0'
+    }
+  });
+});
+
 app.listen(3000, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });
