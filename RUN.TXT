@@ -1,0 +1,2 @@
+curl -v http://20.0.0.200:3000/thread -d "title=pokusný český žluťoučký text&author=Jaroslav Urbánek"
+curl -v http://20.0.0.200:3000/thread -d "title=test&author=jurby"

@@ -1,0 +1,12 @@
+h1= title
+p Welcome to #{title}
+
+- if (threads.length)
+  ul#threads
+    - threads.forEach(function(thread){
+      li= thread
+    - })
+
+ul
+each thread, key in threads
+  li #{key}: #{thread}
